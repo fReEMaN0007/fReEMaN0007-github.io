@@ -1,0 +1,1523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="script/portfolioScript.js"></script>
+    <title>Document</title>
+</head>
+<body id="bodyFor" onload="artWorkLoad()">
+    <div class="flex-container-jumbotron">
+        <img src="images/cover1.jpg" alt="Girl in a jacket" class="responsiveImage">
+        <div id="topLeftLabel" class="coverLabel">DESIGNer</div>
+        <div id="bottomRightLabel" class="coverLabel">PROGRAMMer</div>
+        <div id="Aspiring" class="coverFont">Aspiring Java & <br>Web Developer.</div>
+        <div id="hi" class="coverFont">Hi I'm Angelo!</div>
+    </div>
+    
+    <div id="contentArea_4_PC" class="flex-container-contentArea">
+        <div class="flex-container-sidebar">
+            <div id="pictureContainer">
+                <div>
+                    <img src="images/picKoSquare.jpg" id="picKo">            
+                </div>
+            </div>
+            <div class="row ">Basic Information</div>
+            <div id="personalINfoContainer">
+                <div class="row">
+                    <div class="column left">
+                        Birthday:<br>
+                        Religion:<br>
+                        Gender:<br>
+                        Address:<br>
+                        Civil Status:<br>
+                        Citizenship:<br>
+                    </div>
+                    <div class="column right">
+                        May 3, 1989 <br>
+                        Catholic<br>
+                        Male<br>
+                        Taytay, Rizal<br>
+                        Single<br>
+                        Filipino<br>
+                    </div>
+                </div>
+            </div>
+            <div class="row center">Contact Info</div>
+            <table>
+                <tr>
+                    <td><img src="images/icons/icons8-facebook-48.png" style="width: 2vw;"></td>
+                    <td class="mediaLinks"><a href="https://www.facebook.com/Freetot007">Angelo Orale on FB</a></td>
+                </tr>
+                <tr>
+                    <td><img src="images/icons/icons8-gmail-logo-48.png" style="width: 1.5vw;"></td>
+                    <td class="mediaLinks">oraleangelo@gmail.com</td>
+                </tr>
+                <tr>
+                    <td><img src="images/icons/icons8-rotary-dial-telephone-48.png" style="width: 1.5vw;"></td>
+                    <td class="mediaLinks">0920 699 2913</td>
+                </tr>
+
+            </table>
+
+        </div>
+        <div class="flex-container-content">
+            <div class="flex-container-menubar">
+                <ul>
+                    <li class="active" id="navTrainings" onclick="navContentSwitch(1)">Trainings & Certificate</li>
+                    <li  class="nonActive"id="navEducation" onclick="navContentSwitch(2)">Education</li>
+                    <li class="nonActive" id="navWorkExperience" onclick="navContentSwitch(3)">Work Experience</li>
+                    <li class="nonActive" id="navSkills" onclick="navContentSwitch(4)">Skills</li>
+                    <li class="nonActive" id="navProjects" onclick="navContentSwitch(5)">Projects</li>
+                    <li class="nonActive" id="navInterests" onclick="navContentSwitch(6)">Interests</li>
+                    <li class="nonActive" id="navArt" onclick="navContentSwitch(7), artWorkLoad()">Art Works</li>
+                </ul>
+            </div>
+            <div class="navContent" id="contentTrainings" style="display: block;">
+                <div onclick="certNav(1)" class="navButtonCert" style="color: rgb(187, 137, 0); font-size: 2vw;">
+                    ◄
+                </div>
+                <div class="certContainer" id="webDev" style="display: block;">
+                    <!---    WEB DEV CERT-->
+                    <div class="cert"  >
+                        <div class="schoolText">
+                            MINDTECH TRAINING AND DEVELOPMENT INSTITUTE INC.
+                        </div>
+                        <div class="addressText">
+                           #103 Dr. Sixto Antonio Avenue Brgy. Rosario Pasig City
+                        </div>
+                        <div class="addressText spacerCert">
+                            Present This
+                        </div>
+                        <div class="courseText">
+                            Certificate of Completion
+                        </div>
+                        <div class="addressText">
+                          to
+                         </div>
+                         <div class="nameText">
+                            Angelo J. Orale
+                        </div>
+                        <div class="addressText spacerCert" >
+    
+                           For having successfully completed the program in
+                         </div>
+                        <div class="courseText">
+                            Web Development
+                        </div>
+                        <div class="addressText">
+                            108 hours
+                        </div>
+                        <div class="addressText">
+                            <b>From June 23, 2021 to July 16, 2021</b>
+                        </div>
+                    </div>
+                    <div class="competencies" id="webDevComp" style="display: block;">
+                        Units of Competencies Completed
+                        <br>
+                        <div class="competenciesText">
+                            <br>
+                            <b>Common:</b><br>
+                            ● Apply Quality Standards<br>
+                            ● Operate a personal Computer<br><br>
+                            <b>Core:</b><br>
+                            ● Program Logic Formulation & Programming in C++<br>
+                            ● Program Java Fundamentals<br>
+                            ● Develop Java Applications<br>
+                            ● Develop Web Application Using PHP & MySql<br>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="certContainer" id="creativeWebDesign" style="display: none;"> 
+                    <!---    WEB DESIGN CERT-->
+                    <div class="cert"  >
+                        <div class="schoolText">
+                            MINDTECH TRAINING AND DEVELOPMENT INSTITUTE INC.
+                        </div>
+                        <div class="addressText">
+                           #103 Dr. Sixto Antonio Avenue Brgy. Rosario Pasig City
+                           <br><br><br>
+                           Present This
+                        </div>
+                        <div class="courseText">
+                            Certificate of Completion
+                        </div>
+                        <div class="addressText">
+                          to
+                         </div>
+                         <div class="nameText">
+                            Angelo J. Orale
+                        </div>
+                        <div class="addressText">
+                            <br>
+                           For having successfully completed the program in
+                         </div>
+                        <div class="courseText">
+                            Creative Web Design
+                        </div>
+                        <div class="addressText">
+                            <br>
+                            102 hours
+                            <br>
+                            <b>From july 19, 2021 to August 10, 2021</b>
+                        </div>
+                    </div>
+                    <div class="competencies" id="webDesignComp" style="display: none;">
+                        Units of Competencies Completed
+                        <br>
+                        <div class="competenciesText">
+                            <br>
+                            <b>Common:</b><br>
+                            ● Apply Quality Standards<br>
+                            ● Operate a personal Computer<br><br>
+                            <b>Core:</b><br>
+                            ● Create Dynamic Web Page<br>
+                            ● Practices Importance of Usability<br>
+                            ● Describe Work as a Team<br>
+                            ● Meet work priorities and maintain professional
+                            growth and development.<br>
+                        </div>
+                    </div>
+                </div>
+                <div onclick="certNav(2)" class="navButtonCert" style="color: rgb(187, 137, 0); font-size: 2vw;">
+                    ►
+                </div>
+                <div class="bulletCertCon">
+                    <div class="bulletCertConActive" id="bulletCert0">●</div>
+                    <div class="bulletsCert" id="bulletCert1">●</div>
+                </div>
+             
+            </div>
+            <div class="navContent" id="contentEducation" style="display: none;">
+
+                <div id="gradPicContainer">
+                    <img src="images/ORALE ANGELO (3)_pp.JPG" alt="gradPic" id="gradPic">
+                </div>
+                <div id="educationText">
+                    <div class="textHead">Tertiary Education</div> 
+                    <div class="text">BS Computer Science</div>
+                    <div class="text">Batch 2021</div>
+                    <div class="text">ACLC College of Taytay</div>
+
+                    <div class="text" style="margin-bottom: 5vw;">Taytay, Rizal</div>
+
+                    <div class="textHead">Secondary Education</div> 
+                    <div class="text">Mandaluyong Highschool</div>
+                    <div class="text" style="margin-bottom: 5vw;">Mandaluyong City</div>
+
+                    <div class="textHead">Primary Education</div> 
+                    <div class="text">Exodus Elementary School</div>
+                    <div class="text" style="margin-bottom: 5vw;">Taytay, Rizal</div>
+
+                </div>
+            </div>
+            <div class="navContent" id="contentWork" style="display: none;">
+                <div class="workContainer">     
+                    <div class="workPicContainer">
+                        <img src="images/pexels-elias-gamez-10558599.jpg" alt="">
+                    </div>
+                    <div class="textHead workHead">
+                       On Call Computer Technician
+                    </div>
+                    <div class="workText">
+                        On Call Computer Technician
+                    </div>
+                </div>
+                <div class="workContainer">
+                    <div class="workPicContainer" >
+                        <img src="images/pexels-anna-pou-8133326.jpg" alt="">
+                    </div>
+                    <div class="textHead workHead"  id="workSoundTech">
+                       Lights & Sound Tech
+                    </div>
+                    <div class="workText">
+                        On Call Computer Technician
+                    </div>
+                </div>
+                <div class="workContainer">
+                    <div class="workPicContainer">
+                        <img src="images/person-holding-brown-wooden-board.jpg" alt="">
+                    </div>
+                    <div class="textHead workHead" id="workPrinting">
+                       Printing Shop Owner
+                    </div>
+                    <div class="workText">
+                        On Call Computer Technician
+                    </div>
+                </div>
+            </div>
+            <div class="navContent" id="contentSkills">
+                <div class="skillsTable">
+                    <div class="skillsHead">
+                        <div class="skillsHeadText">
+                            Software Development
+                        </div>
+                    </div>
+                    <div class="skillsHead subHead">
+                        <div class="skillsHeadText subText">
+                            Front-End
+                        </div>
+                    </div>
+                    <div class="skillsHead subHead">
+                        <div class="skillsHeadText subText" style="border-left: solid; border-width: 1px;">
+                            Back-End
+                        </div>
+                    </div>
+                    <div class="halfContainer">
+                        <div class="contentSkill">
+                            <div class="skillsItemContainer">
+                                <div class="skillsItemCircle">
+                                    <img src="images/icons/html.jpg">
+                                </div>
+                                <div class="skillItemsText">
+                                    <div class="skillItemsTextHead">
+                                        HTML 
+                                    </div>
+                                    <div style="margin-left: 3.5vw;">
+                                        <b>Hypertext Markup Language</b>
+                                        <br>
+                                        bsdfas
+                                    </div>  
+                            </div>
+                            </div>
+                        </div>
+                        <div class="contentSkill">
+                            <div class="skillsItemContainer">
+                                <div class="skillsItemCircle">
+                                    <img src="images/icons/css.jpg">
+                                </div>
+                                <div class="skillItemsText">
+                                    <div class="skillItemsTextHead">
+                                        CSS 
+                                    </div>
+                                    <div style="margin-left: 3.5vw;">
+                                        <b>Cascading Style Sheets</b>
+                                        <br>
+                                        bsdfas
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contentSkill">
+                            <div class="skillsItemContainer">
+                                <div class="skillsItemCircle">
+                                    <img src="images/icons/js.jpg">
+                                </div>
+                                <div class="skillItemsText">
+                                    <div class="skillItemsTextHead">
+                                        JS 
+                                    </div>
+                                    <div style="margin-left: 3.5vw;">
+                                        <b>Javascript</b>
+                                        <br>
+                                        bsdfas
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contentSkill">
+                            <div class="skillsItemContainer">
+                                <div class="skillsItemCircle">
+                                    <img src="images/icons/java.jpg">
+                                </div>
+                                <div class="skillItemsText">
+                                    <div class="skillItemsTextHead">
+                                        Java Swing 
+                                    </div>
+                                    <div style="margin-left: 3.5vw;">
+                                        <b>Java Swing Components</b>
+                                        <br>
+                                        bsdfas
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contentSkill">
+                            <div class="skillsItemContainer">
+                                <div class="skillsItemCircle">
+                                    <img src="images/icons/ps.jpg">
+                                </div>
+                                <div class="skillItemsText">
+                                    <div class="skillItemsTextHead">
+                                        Photo Manipulatlion
+                                    </div>
+                                    <div style="margin-left: 3.5vw;">
+                                        <b>Adobe Photoshop</b>
+                                        <br>
+                                        bsdfas
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contentSkill">
+                            <div class="skillsItemContainer">
+                                <div class="skillsItemCircle">
+                                    <img src="images/icons/ai.jpg">
+                                </div>
+                                <div class="skillItemsText">
+                                    <div class="skillItemsTextHead">
+                                        Vector Images
+                                    </div>
+                                    <div style="margin-left: 3.5vw;">
+                                        <b>Adobe Illustrator</b>
+                                        <br>
+                                        bsdfas
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contentSkill">
+                            <div class="skillsItemContainer">
+                                <div class="skillsItemCircle">
+                                    <img src="images/icons/corel.jpg">
+                                </div>
+                                <div class="skillItemsText">
+                                    <div class="skillItemsTextHead">
+                                        Vector Images
+                                    </div>
+                                    <div style="margin-left: 3.5vw;">
+                                        <b>Corel Draw</b>
+                                        <br>
+                                        bsdfas
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contentSkill">
+                            <div class="skillsItemContainer">
+                                <div class="skillsItemCircle">
+                                    <img src="images/icons/bootstrap.jpg">
+                                </div>
+                                <div class="skillItemsText">
+                                    <div class="skillItemsTextHead">
+                                        FrameWork
+                                    </div>
+                                    <div style="margin-left: 3.5vw;">
+                                        <b>bootstrap</b>
+                                        <br>
+                                        bsdfas
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="halfContainer">
+                        <div class="contentSkill">
+                            <div class="skillsItemContainer">
+                                <div class="skillsItemCircle">
+                                    <img src="images/icons/java.jpg">
+                                </div>
+                                <div class="skillItemsText">
+                                    <div class="skillItemsTextHead">
+                                        JAVA 
+                                    </div>
+                                    <div style="margin-left: 3.5vw;">
+                                        <b>Java Language</b>
+                                        <br>
+                                        bsdfas
+                                    </div>  
+                            </div>
+                            </div>
+                        </div>
+                        <div class="contentSkill">
+                            <div class="skillsItemContainer">
+                                <div class="skillsItemCircle">
+                                    <img src="images/icons/php.jpg">
+                                </div>
+                                <div class="skillItemsText">
+                                    <div class="skillItemsTextHead">
+                                        PHP 
+                                    </div>
+                                    <div style="margin-left: 3.5vw;">
+                                        <b>PHP: Hypertext Preprocessor</b>
+                                        <br>
+                                        bsdfas
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contentSkill">
+                            <div class="skillsItemContainer">
+                                <div class="skillsItemCircle">
+                                    <img src="images/icons/mysql.jpg">
+                                </div>
+                                <div class="skillItemsText">
+                                    <div class="skillItemsTextHead">
+                                        Database
+                                    </div>
+                                    <div style="margin-left: 3.5vw;">
+                                        <b>MySql</b>
+                                        <br>
+                                        bsdfas
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navContent" id="contentProjects" style="display: none;">
+                 <div class="projectsCon">
+                    <div class="projectsImgCon">
+                        <img src="images/projects/Untitled-1.jpg" alt="">
+                        <div class="buttonCon">
+                            <a href="https://github.com/fReEMaN0007/cplusplustut" target="_blank">
+                                <input type="button"  class="buttonProjects" value="Source Code">
+                            </a>
+                            <a href="https://drive.google.com/file/d/1b8X32jU5_EMPy5EeV6gmnsVY1ufnstvj/view?usp=share_link" target="_blank">
+                                <input type="button"  class="buttonProjects" value="Video Demo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="projectsDetails">
+                        <div class="projectsLines">
+                            <span class="projectHead">Title:</span> <span class="titleProject">C++ Tutorial Android Application</span>
+                        </div>
+                        <div class="projectsLines">
+                            <span class="projectHead">Contributors:</span> Julie Anne Datul, John Niel
+                        </div>
+                        <div class="projectsLines">
+                            Luzano, Angelo Orale, Josue Tutor
+                        </div>
+                        <div class="projectsLines">
+                            <span class="projectHead">Type:</span> Academic (Thesis)
+                        </div>
+                        <div class="projectsLines">
+                            <span class="projectHead">Role:</span> Lead Programmer & Designer
+                        </div>
+                        <div class="projectsLines">
+                            <span class="projectHead">Technology Used:</span> Kotlin, MySql, Sqlite, PHP
+                        </div>
+                        <div class="projectsLines">
+                            <span class="projectHead">Introduction:</span> Lorem ipsum dolor sit amet,
+                        </div>
+                        <div class="projectsLines">
+                            Lorem ipsum dolor sit amet, consectetur
+                        </div>
+                        <div class="projectsLines">
+                            adipiscing elit. amet, consectetur sit amet,
+                        </div>
+                        <div class="projectsLines">
+                            Lorem ipsum dolor sit amet, consectetur
+                        </div>
+                        <div class="projectsLines">
+                            adipiscing elit. amet, consectetur sit amet,
+                        </div>
+                    </div>
+                 </div>
+                 <div class="projectsCon">
+                    <div class="projectsImgCon">
+                        <img src="images/projects/school.jpg" alt="">
+                        <div class="buttonCon">
+                            <input type="button"  class="buttonProjects" value="Source Code">
+                            <input type="button"  class="buttonProjects" value="Live View">
+                            <input type="button"  class="buttonProjects" value="Video Demo">
+                        </div>
+                        
+                    </div>
+                    <div class="projectsDetails">
+                        <div class="projectsLines">
+                            <span class="projectHead">Title:</span> <span class="titleProject">School Website</span>
+                        </div>
+                        <div class="projectsLines">
+                            <span class="projectHead">Contributors:</span> Angelo Orale
+                        </div>
+                        <div class="projectsLines">
+                            <span class="projectHead">Type:</span> Academic (Subject Completion)
+                        </div>
+                        <div class="projectsLines">
+                            <span class="projectHead">Role:</span> Lead Programmer & Designer
+                        </div>
+                        <div class="projectsLines">
+                            <span class="projectHead">Technology Used:</span> HTML, CSS, Javascript
+                        </div>
+                        <div class="projectsLines">
+                            <span class="projectHead">Introduction:</span> Lorem ipsum dolor sit amet,
+                        </div>
+                        <div class="projectsLines">
+                            Lorem ipsum dolor sit amet, consectetur
+                        </div>
+                        <div class="projectsLines">
+                            adipiscing elit. amet, consectetur sit amet,
+                        </div>
+                        <div class="projectsLines">
+                            Lorem ipsum dolor sit amet, consectetur
+                        </div>
+                        <div class="projectsLines">
+                            adipiscing elit. amet, consectetur sit amet,
+                        </div>
+                        <div class="projectsLines emptylines">
+                           
+                        </div>
+                    </div>
+                 </div>
+                 <div class="projectsCon">
+                    <div class="projectsImgCon">
+                        <img src="images/projects/hris.jpg" alt="">
+                        <div class="buttonCon">
+                            <a href="https://www.facebook.com" target="_blank">
+                                <input type="button"  class="buttonProjects" value="Source Code">
+                            </a>
+                            <input type="button"  class="buttonProjects" value="Video Demo">
+                        </div>
+                    </div>
+                    <div class="projectsDetails">
+                        <div class="projectsLines">
+                            <span class="projectHead">Title:</span> <span class="titleProject">Hurman Resource Info-System</span>
+                        </div>
+                        <div class="projectsLines">
+                            <span class="projectHead">Contributors:</span> Angelo Orale
+                        </div>
+                        <div class="projectsLines">
+                            <span class="projectHead">Type:</span> Personal (Self Improvement)
+                        </div>
+                        <div class="projectsLines">
+                            <span class="projectHead">Role:</span> Lead Programmer & Designer
+                        </div>
+                        <div class="projectsLines">
+                            <span class="projectHead">Technology Used:</span> Java, Java Swing, Sqlite
+                        </div>
+                        <div class="projectsLines">
+                            <span class="projectHead">Introduction:</span> Lorem ipsum dolor sit amet,
+                        </div>
+                        <div class="projectsLines">
+                            Lorem ipsum dolor sit amet, consectetur
+                        </div>
+                        <div class="projectsLines">
+                            adipiscing elit. amet, consectetur sit amet,
+                        </div>
+                        <div class="projectsLines">
+                            Lorem ipsum dolor sit amet, consectetur
+                        </div>
+                        <div class="projectsLines">
+                            adipiscing elit. amet, consectetur sit amet,
+                        </div>
+                        <div class="projectsLines emptylines">
+                           
+                        </div>
+                    </div>
+                 </div>
+                 <div class="projectsCon">
+                    <div class="projectsImgCon">
+                        <img src="images/projects/scraping.jpg" alt="">
+                        <div class="buttonCon">
+                            <input type="button"  class="buttonProjects" value="Source Code">
+                            <input type="button"  class="buttonProjects" value="Video Demo">
+                        </div>
+                    </div>
+                    <div class="projectsDetails">
+                        <div class="projectsLines">
+                            <span class="projectHead">Title:</span> <span class="titleProject">Lotto Result Scraping Tool</span>
+                        </div>
+                        <div class="projectsLines">
+                            <span class="projectHead">Contributors:</span> Angelo Orale
+                        </div>
+                        <div class="projectsLines">
+                            <span class="projectHead">Type:</span> Personal (Self Improvement)
+                        </div>
+                        <div class="projectsLines">
+                            <span class="projectHead">Role:</span> Lead Programmer & Designer
+                        </div>
+                        <div class="projectsLines">
+                            <span class="projectHead">Technology Used:</span> Java, JSP, Servelet, Mysql,
+                        </div>
+                        <div class="projectsLines">
+                            HtmlUnit 
+                        </div>
+                        <div class="projectsLines">
+                            <span class="projectHead">Introduction:</span> Lorem ipsum dolor sit amet,
+                        </div>
+                        <div class="projectsLines">
+                            Lorem ipsum dolor sit amet, consectetur
+                        </div>
+                        <div class="projectsLines">
+                            adipiscing elit. amet, consectetur sit amet,
+                        </div>
+                        <div class="projectsLines">
+                            Lorem ipsum dolor sit amet, consectetur
+                        </div>
+                        <div class="projectsLines">
+                            adipiscing elit. amet, consectetur sit amet,
+                        </div>
+                    </div>
+                 </div>
+                 <!-- <div class="projectsCon">
+                    <div class="projectsImgCon">
+
+                    </div>
+                    <div class="projectsDetails">
+                        <div class="projectsLines">
+                            <span class="projectHead">Title:</span> <span class="titleProject">School Library System</span>
+                        </div>
+                        <div class="projectsLines">
+                            <span class="projectHead">Contributors:</span> Angelo Orale
+                        </div>
+                        <div class="projectsLines">
+                            <span class="projectHead">Type:</span> Academic (Subject Completion)
+                        </div>
+                        <div class="projectsLines">
+                            <span class="projectHead">Role:</span> Lead Programmer & Designer
+                        </div>
+                        <div class="projectsLines">
+                            <span class="projectHead">Technology Used:</span> Visual Basic, MS Access
+                        </div>
+                        <div class="projectsLines">
+                            <span class="projectHead">Introduction:</span> Lorem ipsum dolor sit amet,
+                        </div>
+                        <div class="projectsLines">
+                            Lorem ipsum dolor sit amet, consectetur
+                        </div>
+                        <div class="projectsLines">
+                            adipiscing elit. amet, consectetur sit amet,
+                        </div>
+                        <div class="projectsLines">
+                            Lorem ipsum dolor sit amet, consectetur
+                        </div>
+                        <div class="projectsLines">
+                            adipiscing elit. amet, consectetur sit amet,
+                        </div>
+                        <div class="projectsLines emptylines">
+                           
+                        </div>
+                    </div>
+                 </div> -->
+            </div>
+            <div class="navContent" id="contentInterest">
+                <div class="photoCollageCon">
+                    <div class="flexRow">
+                        <div class="flexCol" id="flexCol1">
+                        <img class="imgInterest groupCollage interestAnimation" id="img1" src="images/interests/24993248_10208320741416144_8535956492167166793_n.jpg">
+                        <img class="imgInterest groupCollage interestAnimation" id="img3" src="images/interests/278866467_10217064524125247_765981301553796104_n.jpg">    
+                        </div>
+                        <img class="imgInterest interestAnimation" id="img2" src="images/interests/278861236_10217064524565258_9146475024349166299_n.jpg">
+                        <img class="imgInterest interestAnimation" id="img4" src="images/interests/310748333_10217727165970879_5756491376537232415_n.jpg" alt="">
+                        <img class="imgInterest interestAnimation" id="img5" src="images/interests/running.jpg" alt="">
+                        <img class="imgInterest interestAnimation" id="lebron" src="images/interests/lebron.jpg" alt="">
+                    </div>
+                    <div class="flexRow" id="flexrow2">
+                        <img class="imgInterest interestAnimation" id="img6" src="images/interests/antips.jpg">
+                        <div class="flexCol" id="flexCol2">
+                            <img class="imgInterest interestAnimation groupCollage" id="cabal1" src="images/interests/cabal1.jpg">
+                            <img class="imgInterest interestAnimation groupCollage" id="cabal2" src="images/interests/cabal2.jpg">    
+                        </div>
+                        <img class="imgInterest interestAnimation" id="kobe" src="images/interests/kobe.jpg">
+                        <img class="imgInterest interestAnimation" id="bron" src="images/interests/bron.jpg">
+                        <div class="flexCol" id="flexCol3">
+                            <img class="imgInterest interestAnimation groupCollage" id="naruto" src="images/interests/naruto2.jpg">
+                            <img class="imgInterest interestAnimation groupCollage" id="eyeshield" src="images/interests/eyeshield.jpg">    
+                            <img class="imgInterest interestAnimation groupCollage" id="sakuragi" src="images/interests/sakuragi.jpg">
+                            <img class="imgInterest interestAnimation groupCollage" id="yuwamushi" src="images/interests/yuwamushi.jpg">    
+                        </div>
+                    </div>
+                    <div class="flexRow" id="flexrow3">
+                        <img class="imgInterest interestAnimation" id="basketball" src="images/interests/basketball.jpg">
+                        <img class="imgInterest interestAnimation" id="mags" src="images/interests/mags.jpg">
+                        <img class="imgInterest interestAnimation" id="ragnar" src="images/interests/ragnar.jpg">
+                        <div class="flexCol" id="flexCol4">
+                            <img class="imgInterest interestAnimation groupCollage" id="bistek" src="images/interests/bistek.jpg">
+                            <img class="imgInterest interestAnimation groupCollage" id="bicol" src="images/interests/bicol.jpg">     
+                        </div>
+                        <img class="imgInterest interestAnimation" id="shoes" src="images/interests/shoes.jpg">
+                    </div>
+                  
+
+                </div>        
+
+            </div>
+            <div class="navContent" id="contentArt" style="display: none;">
+                <div id="artModal"> 
+                    <div id="backButton" class="navButton" onclick="prev()" onmousedown="downClick()" onmouseup="upClick()">
+                        <div style="color: white; font-size: 1vw;">
+                            ◄
+                        </div>
+                    </div>
+                    <div id="modalImageContainer">
+                        <img id="modalImage">
+                        <div class="bullets" id="bullet0">●</div><div class="bullets" id="bullet1">●</div><div class="bullets" id="bullet2">●</div>
+                        <div class="bullets" id="bullet3">●</div><div class="bullets" id="bullet4">●</div><div class="bullets" id="bullet5">●</div>
+                        <div class="bullets" id="bullet6">●</div><div class="bullets" id="bullet7">●</div><div class="bullets" id="bullet8">●</div>
+                        <div class="bullets" id="bullet9">●</div><div class="bullets" id="bullet10">●</div><div class="bullets" id="bullet11">●</div>
+                    </div>                   
+                    <div id="forwardButton" class="navButton" onclick="next()" onmousedown="downClick()" onmouseup="upClick()">
+                        <div style="color: white;">
+                            ►
+                        </div>                     
+                    </div>
+                    <div class="closeButton" onclick="closeModal()">X   </div>
+                </div>
+                
+            </div>
+          
+              
+        </div>
+    </div>
+    <div id="contentArea_4_tablet_mobile" class="flex-container-contentArea">
+        <div class="flex-container-sidebar">
+            <div id="pictureContainer">
+                <div>
+                    <img src="images/picKoSquare.jpg" id="picKo">            
+                </div>
+            </div>
+           
+            <div id="personalINfoContainerMObile">
+                <div class="">
+                    <div class="row center">Basic Information</div>
+                    <div class="column left">
+                        Birthday:<br>
+                        Religion:<br>
+                        Gender:<br>
+                        Address:<br>
+                        Civil Status:<br>
+                        Citizenship:<br>
+                    </div>
+                    <div class="column right">
+                        May 3, 1989 <br>
+                        Catholic<br>
+                        Male<br>
+                        Taytay, Rizal<br>
+                        Single<br>
+                        Filipino<br>
+                    </div>
+                </div>
+                <div class="row center">Contact Info</div>
+                <table>
+                    <tr>
+                        <td><img src="images/icons/icons8-facebook-48.png" style="width: 2vw;"></td>
+                        <td class="mediaLinks"><a href="https://www.facebook.com/Freetot007">Angelo Orale on FB</a></td>
+                        <td><img src="images/icons/icons8-gmail-logo-48.png" style="width: 1.5vw;"></td>
+                        <td class="mediaLinks">oraleangelo@gmail.com</td>
+                        <td><img src="images/icons/icons8-rotary-dial-telephone-48.png" style="width: 1.5vw;"></td>
+                        <td class="mediaLinks">0920 699 2913</td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+        <div class="flex-container-content">
+            <div class="headBar">
+                <!-- <ul class="ul4mobile">
+                    <li class="active" id="navTrainings" onclick="navContentSwitch(1)">Trainings & Certificate</li>
+                    <li  class="nonActive"id="navEducation" onclick="navContentSwitch(2)">Education</li>
+                    <li class="nonActive" id="navWorkExperience" onclick="navContentSwitch(3)">Work Experience</li>
+                    <li class="nonActive" id="navSkills" onclick="navContentSwitch(4)">Skills</li>
+                    <li class="nonActive" id="navProjects" onclick="navContentSwitch(5)">Projects</li>
+                    <li class="nonActive" id="navInterests" onclick="navContentSwitch(6)">Interests</li>
+                    <li class="nonActive" id="navArt" onclick="navContentSwitch(7), artWorkLoad()">Art Works</li>
+                </ul> -->
+                <!-- <img src="images/icons/menu2.png" alt="" id="iconMenu" onclick="dropDown()"> -->
+                <div id="navHead4Mobile" >Training & Certificate</div>
+            </div>
+            <!-- <div id="dropDown4Mobile" onmouseleave="dropDown()">
+                <ul>
+                    <li class="active">Training & Certificate</li>
+                    <li>Education</li>
+                    <li>Work Experience</li>
+                    <li>Skill</li>
+                    <li>Projects</li>
+                    <li>Interest</li>
+                    <li>Art Works</li>
+                  </ul>
+            </div> -->
+            <div class="navContent" id="contentTrainings" style="display: block;">
+                <div onclick="certNav(1)" class="navButtonCert" style="color: rgb(187, 137, 0); font-size: 2vw;">
+                    ◄
+                </div>
+                <div class="certContainer" id="webDevMobile" style="display: block;">
+                    <!---    WEB DEV CERT-->
+                    <div class="cert"  >
+                        <div class="schoolText">
+                            MINDTECH TRAINING AND DEVELOPMENT INSTITUTE INC.
+                        </div>
+                        <div class="addressText">
+                           #103 Dr. Sixto Antonio Avenue Brgy. Rosario Pasig City
+                        </div>
+                        <div class="addressText spacerCert">
+                            Present This
+                        </div>
+                        <div class="courseText">
+                            Certificate of Completion
+                        </div>
+                        <div class="addressText">
+                          to
+                         </div>
+                         <div class="nameText">
+                            Angelo J. Orale
+                        </div>
+                        <div class="addressText spacerCert" >
+    
+                           For having successfully completed the program in
+                         </div>
+                        <div class="courseText">
+                            Web Development
+                        </div>
+                        <div class="addressText">
+                            108 hours
+                        </div>
+                        <div class="addressText">
+                            <b>From June 23, 2021 to July 16, 2021</b>
+                        </div>
+                    </div>
+                    <div class="competencies" id="webDevCompMobile" style="display: block;">
+                        Units of Competencies Completed
+                        <br>
+                        <div class="competenciesText">
+                            <br>
+                            <b>Common:</b><br>
+                            ● Apply Quality Standards<br>
+                            ● Operate a personal Computer<br><br>
+                            <b>Core:</b><br>
+                            ● Program Logic Formulation & Programming in C++<br>
+                            ● Program Java Fundamentals<br>
+                            ● Develop Java Applications<br>
+                            ● Develop Web Application Using PHP & MySql<br>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="certContainer" id="creativeWebDesignMobile" style="display: none;"> 
+                    <!---    WEB DESIGN CERT-->
+                    <div class="cert"  >
+                        <div class="schoolText">
+                            MINDTECH TRAINING AND DEVELOPMENT INSTITUTE INC.
+                        </div>
+                        <div class="addressText">
+                           #103 Dr. Sixto Antonio Avenue Brgy. Rosario Pasig City
+                           <br><br><br>
+                           Present This
+                        </div>
+                        <div class="courseText">
+                            Certificate of Completion
+                        </div>
+                        <div class="addressText">
+                          to
+                         </div>
+                         <div class="nameText">
+                            Angelo J. Orale
+                        </div>
+                        <div class="addressText">
+                            <br>
+                           For having successfully completed the program in
+                         </div>
+                        <div class="courseText">
+                            Creative Web Design
+                        </div>
+                        <div class="addressText">
+                            <br>
+                            102 hours
+                            <br>
+                            <b>From july 19, 2021 to August 10, 2021</b>
+                        </div>
+                    </div>
+                    <div class="competencies" id="webDesignCompMobile" style="display: none;">
+                        Units of Competencies Completed
+                        <br>
+                        <div class="competenciesText">
+                            <br>
+                            <b>Common:</b><br>
+                            ● Apply Quality Standards<br>
+                            ● Operate a personal Computer<br><br>
+                            <b>Core:</b><br>
+                            ● Create Dynamic Web Page<br>
+                            ● Practices Importance of Usability<br>
+                            ● Describe Work as a Team<br>
+                            ● Meet work priorities and maintain professional
+                            growth and development.<br>
+                        </div>
+                    </div>
+                </div>
+                <div onclick="certNav(2)" class="navButtonCert" style="color: rgb(187, 137, 0); font-size: 2vw;">
+                    ►
+                </div>
+                <div class="bulletCertCon">
+                    <div class="bulletCertConActive" id="bulletCert0Mobile">●</div>
+                    <div class="bulletsCert" id="bulletCert1Mobile">●</div>
+                </div>
+             
+            </div>
+        </div>    
+<!--------------------EDUCATION  -->
+        <div class="flex-container-content">
+            <div class="headBar">
+                <div id="navHead4Mobile" >Education</div>
+            </div>
+            <div class="navContent" id="contentEducation" style="display: block;">
+                <div id="gradPicContainer">
+                    <img src="images/ORALE ANGELO (3)_pp.JPG" alt="gradPic" id="gradPic">
+                </div>
+                <div id="educationText">
+                    <div class="textHead">Tertiary Education</div> 
+                    <div class="text">BS Computer Science</div>
+                    <div class="text">Batch 2021</div>
+                    <div class="text">ACLC College of Taytay</div>
+
+                    <div class="text" style="margin-bottom: 5vw;">Taytay, Rizal</div>
+
+                    <div class="textHead">Secondary Education</div> 
+                    <div class="text">Mandaluyong Highschool</div>
+                    <div class="text" style="margin-bottom: 5vw;">Mandaluyong City</div>
+
+                    <div class="textHead">Primary Education</div> 
+                    <div class="text">Exodus Elementary School</div>
+                    <div class="text" style="margin-bottom: 5vw;">Taytay, Rizal</div>
+
+                </div>
+            </div>
+        </div> 
+<!-------------------WORK  -->
+        <div class="flex-container-content">  
+            <div class="headBar">
+                <div id="navHead4Mobile" >Work Experience</div>
+            </div> 
+            <div class="navContent" id="contentWork" style="display: block;">
+                <div class="workContainer">     
+                    <div class="workPicContainer">
+                        <img src="images/pexels-elias-gamez-10558599.jpg" alt="">
+                    </div>
+                    <div class="textHead workHead">
+                       On Call Computer Technician
+                    </div>
+                    <div class="workText">
+                        On Call Computer Technicianfgdsafdsa
+                    </div>
+                </div>
+                <div class="workContainer">
+                    <div class="workPicContainer" >
+                        <img src="images/pexels-anna-pou-8133326.jpg" alt="">
+                    </div>
+                    <div class="textHead workHead"  id="workSoundTech">
+                       Lights & Sound Tech
+                    </div>
+                    <div class="workText">
+                        On Call Computer Technician
+                    </div>
+                </div>
+                <div class="workContainer">
+                    <div class="workPicContainer">
+                        <img src="images/person-holding-brown-wooden-board.jpg" alt="">
+                    </div>
+                    <div class="textHead workHead" id="workPrinting">
+                       Printing Shop Owner
+                    </div>
+                    <div class="workText">
+                        On Call Computer Technician
+                    </div>
+                </div>
+            </div>
+        </div> 
+<!-------------------Skills  -->
+        <div class="flex-container-content" >
+            <div class="headBar">
+                <div id="navHead4Mobile" >Skills</div>
+            </div>      
+            <div class="navContent" id="contentSkills" style="display: block;">
+                <div class="skillsTable">
+                    <div class="skillsHead">
+                        <div class="skillsHeadText">
+                            Software Development
+                        </div>
+                    </div>
+                    <div class="skillsHead subHead">
+                        <div class="skillsHeadText subText">
+                            Front-End
+                        </div>
+                    </div>
+                    <div class="halfContainer">
+                        <div class="contentSkill">
+                            <div class="skillsItemContainer">
+                                <div class="skillsItemCircle">
+                                    <img src="images/icons/html.jpg">
+                                </div>
+                                <div class="skillItemsText">
+                                    <div class="skillItemsTextHead">
+                                        HTML 
+                                    </div>
+                                    <div class="skillstextCon">
+                                        <b>Hypertext Markup Language</b>
+                                        <br>
+                                        bsdfas
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contentSkill">
+                            <div class="skillsItemContainer">
+                                <div class="skillsItemCircle">
+                                    <img src="images/icons/css.jpg">
+                                </div>
+                                <div class="skillItemsText">
+                                    <div class="skillItemsTextHead">
+                                        CSS 
+                                    </div>
+                                    <div class="skillstextCon">
+                                        <b>Cascading Style Sheets</b>
+                                        <br>
+                                        bsdfas
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contentSkill">
+                            <div class="skillsItemContainer">
+                                <div class="skillsItemCircle">
+                                    <img src="images/icons/js.jpg">
+                                </div>
+                                <div class="skillItemsText">
+                                    <div class="skillItemsTextHead">
+                                        JS 
+                                    </div>
+                                    <div class="skillstextCon">
+                                        <b>Javascript</b>
+                                        <br>
+                                        bsdfas
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contentSkill">
+                            <div class="skillsItemContainer">
+                                <div class="skillsItemCircle">
+                                    <img src="images/icons/java.jpg">
+                                </div>
+                                <div class="skillItemsText">
+                                    <div class="skillItemsTextHead">
+                                        Java Swing 
+                                    </div>
+                                    <div class="skillstextCon">
+                                        <b>Java Swing Components</b>
+                                        <br>
+                                        bsdfas
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contentSkill">
+                            <div class="skillsItemContainer">
+                                <div class="skillsItemCircle">
+                                    <img src="images/icons/ps.jpg">
+                                </div>
+                                <div class="skillItemsText">
+                                    <div class="skillItemsTextHead">
+                                        Photo Manipulatlion
+                                    </div>
+                                    <div class="skillstextCon">
+                                        <b>Adobe Photoshop</b>
+                                        <br>
+                                        bsdfas
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contentSkill">
+                            <div class="skillsItemContainer">
+                                <div class="skillsItemCircle">
+                                    <img src="images/icons/ai.jpg">
+                                </div>
+                                <div class="skillItemsText">
+                                    <div class="skillItemsTextHead">
+                                        Vector Images
+                                    </div>
+                                    <div class="skillstextCon">
+                                        <b>Adobe Illustrator</b>
+                                        <br>
+                                        bsdfas
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contentSkill">
+                            <div class="skillsItemContainer">
+                                <div class="skillsItemCircle">
+                                    <img src="images/icons/corel.jpg">
+                                </div>
+                                <div class="skillItemsText">
+                                    <div class="skillItemsTextHead">
+                                        Vector Images
+                                    </div>
+                                    <div class="skillstextCon">
+                                        <b>Corel Draw</b>
+                                        <br>
+                                        bsdfas
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contentSkill">
+                            <div class="skillsItemContainer">
+                                <div class="skillsItemCircle">
+                                    <img src="images/icons/bootstrap.jpg">
+                                </div>
+                                <div class="skillItemsText">
+                                    <div class="skillItemsTextHead">
+                                        FrameWork
+                                    </div>
+                                    <div class="skillstextCon">
+                                        <b>bootstrap</b>
+                                        <br>
+                                        bsdfas
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skillsHead subHead">
+                        <div class="skillsHeadText subText" style="border-left: solid; border-width: 1px;">
+                                Back-End
+                        </div>
+                    </div> 
+                    <div class="halfContainer">
+                        <div class="contentSkill">
+                            <div class="skillsItemContainer">
+                                <div class="skillsItemCircle">
+                                    <img src="images/icons/java.jpg">
+                                </div>
+                                <div class="skillItemsText">
+                                    <div class="skillItemsTextHead">
+                                        JAVA 
+                                    </div>
+                                    <div class="skillstextCon">
+                                        <b>Java Language</b>
+                                        <br>
+                                        bsdfas
+                                    </div>  
+                            </div>
+                            </div>
+                        </div>
+                   
+                        <div class="contentSkill">
+                            <div class="skillsItemContainer">
+                                <div class="skillsItemCircle">
+                                    <img src="images/icons/php.jpg">
+                                </div>
+                                <div class="skillItemsText">
+                                    <div class="skillItemsTextHead">
+                                        PHP 
+                                    </div>
+                                    <div class="skillstextCon">
+                                        <b>PHP: Hypertext Preprocessor</b>
+                                        <br>
+                                        bsdfas
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contentSkill">
+                            <div class="skillsItemContainer">
+                                <div class="skillsItemCircle">
+                                    <img src="images/icons/mysql.jpg">
+                                </div>
+                                <div class="skillItemsText">
+                                    <div class="skillItemsTextHead">
+                                        Database
+                                    </div>
+                                    <div class="skillstextCon">
+                                        <b>MySql</b>
+                                        <br>
+                                        bsdfas
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+<!-------------------Projects  -->
+        <div class="flex-container-content">
+            <div class="headBar">
+                <div id="navHead4Mobile" >Projects</div>
+            </div>    
+            <div class="navContent" id="contentProjects" style="display: block;">
+                 <div class="projectsCon">
+                    <div class="projectsImgCon">
+                        <img src="images/projects/Untitled-1.jpg" alt="">
+                        <div class="buttonCon">
+                            <input type="button"  class="buttonProjects" value="Source Code">
+                            <input type="button"  class="buttonProjects" value="Video Demo">
+                        </div>
+                    </div>
+                    <div class="projectsDetails">
+                        <div class="projectsLines">
+                            <span class="projectHead">Title:</span> <span class="titleProject">C++ Tutorial Android Application</span>
+                        </div>
+                        <div class="projectsLines">
+                            <span class="projectHead">Contributors:</span> Julie Anne Datul, John Niel
+                        </div>
+                        <div class="projectsLines">
+                            Luzano, Angelo Orale, Josue Tutor
+                        </div>
+                        <div class="projectsLines">
+                            <span class="projectHead">Type:</span> Academic (Thesis)
+                        </div>
+                        <div class="projectsLines">
+                            <span class="projectHead">Role:</span> Lead Programmer & Designer
+                        </div>
+                        <div class="projectsLines">
+                            <span class="projectHead">Technology Used:</span> Kotlin, MySql, Sqlite, PHP
+                        </div>
+                        <div class="projectsLines">
+                            <span class="projectHead">Introduction:</span> Lorem ipsum dolor sit amet,
+                        </div>
+                        <div class="projectsLines">
+                            Lorem ipsum dolor sit amet, consectetur
+                        </div>
+                        <div class="projectsLines">
+                            adipiscing elit. amet, consectetur sit amet,
+                        </div>
+                        <div class="projectsLines">
+                            Lorem ipsum dolor sit amet, consectetur
+                        </div>
+                        <div class="projectsLines">
+                            adipiscing elit. amet, consectetur sit amet,
+                        </div>
+                    </div>
+                 </div>
+                 <div class="projectsCon">
+                    <div class="projectsImgCon">
+                        <img src="images/projects/school.jpg" alt="">
+                        <div class="buttonCon">
+                            
+                            <input type="button"  class="buttonProjects" value="Live View"><br>
+                            <input type="button"  class="buttonProjects" value="Source Code">
+                            <input type="button"  class="buttonProjects" value="Video Demo">
+                        </div>
+                        
+                    </div>
+                    <div class="projectsDetails">
+                        <div class="projectsLines">
+                            <span class="projectHead">Title:</span> <span class="titleProject">School Website</span>
+                        </div>
+                        <div class="projectsLines">
+                            <span class="projectHead">Contributors:</span> Angelo Orale
+                        </div>
+                        <div class="projectsLines">
+                            <span class="projectHead">Type:</span> Academic (Subject Completion)
+                        </div>
+                        <div class="projectsLines">
+                            <span class="projectHead">Role:</span> Lead Programmer & Designer
+                        </div>
+                        <div class="projectsLines">
+                            <span class="projectHead">Technology Used:</span> HTML, CSS, Javascript
+                        </div>
+                        <div class="projectsLines">
+                            <span class="projectHead">Introduction:</span> Lorem ipsum dolor sit amet,
+                        </div>
+                        <div class="projectsLines">
+                            Lorem ipsum dolor sit amet, consectetur
+                        </div>
+                        <div class="projectsLines">
+                            adipiscing elit. amet, consectetur sit amet,
+                        </div>
+                        <div class="projectsLines">
+                            Lorem ipsum dolor sit amet, consectetur
+                        </div>
+                        <div class="projectsLines">
+                            adipiscing elit. amet, consectetur sit amet,
+                        </div>
+                        <div class="projectsLines emptylines">
+                           
+                        </div>
+                    </div>
+                 </div>
+                 <div class="projectsCon">
+                    <div class="projectsImgCon">
+                        <img src="images/projects/hris.jpg" alt="">
+                        <div class="buttonCon">
+                            <input type="button"  class="buttonProjects" value="Source Code">
+                            <input type="button"  class="buttonProjects" value="Video Demo">
+                        </div>
+                    </div>
+                    <div class="projectsDetails">
+                        <div class="projectsLines">
+                            <span class="projectHead">Title:</span> <span class="titleProject">Hurman Resource Info-System</span>
+                        </div>
+                        <div class="projectsLines">
+                            <span class="projectHead">Contributors:</span> Angelo Orale
+                        </div>
+                        <div class="projectsLines">
+                            <span class="projectHead">Type:</span> Personal (Self Improvement)
+                        </div>
+                        <div class="projectsLines">
+                            <span class="projectHead">Role:</span> Lead Programmer & Designer
+                        </div>
+                        <div class="projectsLines">
+                            <span class="projectHead">Technology Used:</span> Java, Java Swing, Sqlite
+                        </div>
+                        <div class="projectsLines">
+                            <span class="projectHead">Introduction:</span> Lorem ipsum dolor sit amet,
+                        </div>
+                        <div class="projectsLines">
+                            Lorem ipsum dolor sit amet, consectetur
+                        </div>
+                        <div class="projectsLines">
+                            adipiscing elit. amet, consectetur sit amet,
+                        </div>
+                        <div class="projectsLines">
+                            Lorem ipsum dolor sit amet, consectetur
+                        </div>
+                        <div class="projectsLines">
+                            adipiscing elit. amet, consectetur sit amet,
+                        </div>
+                        <div class="projectsLines emptylines">
+                           
+                        </div>
+                    </div>
+                 </div>
+                 <div class="projectsCon">
+                    <div class="projectsImgCon">
+                        <img src="images/projects/scraping.jpg" alt="">
+                        <div class="buttonCon">
+                            <input type="button"  class="buttonProjects" value="Source Code">
+                            <input type="button"  class="buttonProjects" value="Video Demo">
+                        </div>
+                    </div>
+                    <div class="projectsDetails">
+                        <div class="projectsLines">
+                            <span class="projectHead">Title:</span> <span class="titleProject">Lotto Result Scraping Tool</span>
+                        </div>
+                        <div class="projectsLines">
+                            <span class="projectHead">Contributors:</span> Angelo Orale
+                        </div>
+                        <div class="projectsLines">
+                            <span class="projectHead">Type:</span> Personal (Self Improvement)
+                        </div>
+                        <div class="projectsLines">
+                            <span class="projectHead">Role:</span> Lead Programmer & Designer
+                        </div>
+                        <div class="projectsLines">
+                            <span class="projectHead">Technology Used:</span> Java, JSP, Servelet, Mysql,
+                        </div>
+                        <div class="projectsLines">
+                            HtmlUnit 
+                        </div>
+                        <div class="projectsLines">
+                            <span class="projectHead">Introduction:</span> Lorem ipsum dolor sit amet,
+                        </div>
+                        <div class="projectsLines">
+                            Lorem ipsum dolor sit amet, consectetur
+                        </div>
+                        <div class="projectsLines">
+                            adipiscing elit. amet, consectetur sit amet,
+                        </div>
+                        <div class="projectsLines">
+                            Lorem ipsum dolor sit amet, consectetur
+                        </div>
+                        <div class="projectsLines">
+                            adipiscing elit. amet, consectetur sit amet,
+                        </div>
+                    </div>
+                 </div>
+                 <!-- <div class="projectsCon">
+                    <div class="projectsImgCon">
+
+                    </div>
+                    <div class="projectsDetails">
+                        <div class="projectsLines">
+                            <span class="projectHead">Title:</span> <span class="titleProject">School Library System</span>
+                        </div>
+                        <div class="projectsLines">
+                            <span class="projectHead">Contributors:</span> Angelo Orale
+                        </div>
+                        <div class="projectsLines">
+                            <span class="projectHead">Type:</span> Academic (Subject Completion)
+                        </div>
+                        <div class="projectsLines">
+                            <span class="projectHead">Role:</span> Lead Programmer & Designer
+                        </div>
+                        <div class="projectsLines">
+                            <span class="projectHead">Technology Used:</span> Visual Basic, MS Access
+                        </div>
+                        <div class="projectsLines">
+                            <span class="projectHead">Introduction:</span> Lorem ipsum dolor sit amet,
+                        </div>
+                        <div class="projectsLines">
+                            Lorem ipsum dolor sit amet, consectetur
+                        </div>
+                        <div class="projectsLines">
+                            adipiscing elit. amet, consectetur sit amet,
+                        </div>
+                        <div class="projectsLines">
+                            Lorem ipsum dolor sit amet, consectetur
+                        </div>
+                        <div class="projectsLines">
+                            adipiscing elit. amet, consectetur sit amet,
+                        </div>
+                        <div class="projectsLines emptylines">
+                           
+                        </div>
+                    </div>
+                 </div> -->
+            </div>
+        </div> 
+<!-------------------Interest  -->
+        <div class="flex-container-content" id="interestContainer">
+            <div class="headBar">
+                <div id="navHead4Mobile" >Interest</div>
+            </div>     
+            <div class="navContent" id="contentInterest" style="display: block;">
+                <div class="photoCollageCon">
+                    <div class="flexRow">
+                        <div class="flexCol" id="flexCol1">
+                        <img class="imgInterest groupCollage interestAnimation" id="img3" src="images/interests/278866467_10217064524125247_765981301553796104_n.jpg">    
+                        <img class="imgInterest groupCollage interestAnimation" id="img1" src="images/interests/24993248_10208320741416144_8535956492167166793_n.jpg">
+                        </div>
+                        <img class="imgInterest interestAnimation" id="img2" src="images/interests/278861236_10217064524565258_9146475024349166299_n.jpg">
+                        <img class="imgInterest interestAnimation" id="img4" src="images/interests/310748333_10217727165970879_5756491376537232415_n.jpg" alt="">
+                        <img class="imgInterest interestAnimation" id="img5" src="images/interests/running.jpg" alt="">
+                        <img class="imgInterest interestAnimation" id="lebron" src="images/interests/lebron.jpg" alt="">
+                    </div>
+                    <div class="flexRow" id="flexrow2">
+                        <img class="imgInterest interestAnimation" id="img6" src="images/interests/antips.jpg">
+                        <div class="flexCol" id="flexCol2">
+                            <img class="imgInterest interestAnimation groupCollage" id="cabal1" src="images/interests/cabal1.jpg">
+                            <img class="imgInterest interestAnimation groupCollage" id="cabal2" src="images/interests/cabal2.jpg">    
+                        </div>
+                        <img class="imgInterest interestAnimation" id="kobe" src="images/interests/kobe.jpg">
+                        <img class="imgInterest interestAnimation" id="bron" src="images/interests/bron.jpg">
+                        <div class="flexCol" id="flexCol3">
+                            <img class="imgInterest interestAnimation groupCollage" id="naruto" src="images/interests/naruto2.jpg">
+                            <img class="imgInterest interestAnimation groupCollage" id="eyeshield" src="images/interests/eyeshield.jpg">    
+                            <img class="imgInterest interestAnimation groupCollage" id="sakuragi" src="images/interests/sakuragi.jpg">
+                            <img class="imgInterest interestAnimation groupCollage" id="yuwamushi" src="images/interests/yuwamushi.jpg">    
+                        </div>
+                    </div>
+                    <div class="flexRow" id="flexrow3">
+                        <img class="imgInterest interestAnimation" id="basketball" src="images/interests/basketball.jpg">
+                        <img class="imgInterest interestAnimation" id="mags" src="images/interests/mags.jpg">
+                        <img class="imgInterest interestAnimation" id="ragnar" src="images/interests/ragnar.jpg">
+                        <div class="flexCol" id="flexCol4">
+                            <img class="imgInterest interestAnimation groupCollage" id="bistek" src="images/interests/bistek.jpg">
+                            <img class="imgInterest interestAnimation groupCollage" id="bicol" src="images/interests/bicol.jpg">     
+                        </div>
+                        <img class="imgInterest interestAnimation" id="shoes" src="images/interests/shoes.jpg">
+                    </div>
+                  
+
+                </div>        
+
+            </div>
+        </div>
+        <!-------------------Art  -->
+        <div class="flex-container-content">
+            <div class="headBar" id = "headARt" >
+                <div id="navHead4Mobile" >Art Work</div>
+            </div>      
+            <div class="navContent" id="contentArtMobile" style="display: block;" >
+           
+            </div>
+        </div>    
+ 
+    </div>
+    <div class="flex-container-footer">
+        <div class="footerContent">
+            © 2023 Angelo J. Orale | All Rights Reserved
+        </div>
+    </div>
+
+</body>
+
+
+</html>
+
+
+

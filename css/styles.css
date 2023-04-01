@@ -1,0 +1,964 @@
+*{
+  box-sizing: border-box;
+}
+img{
+  max-width: 100%;
+}
+body{
+  box-sizing: border-box;
+  background-color: gray;
+}
+.flex-container-jumbotron {
+  box-sizing: border-box;
+  display: flex;
+  background-color: DodgerBlue;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.flex-container-contentArea {
+  box-sizing: border-box;
+  display: inline-flex;
+  background-color: white;
+  width: 100%
+}
+.flex-container-sidebar {
+  box-sizing: border-box;
+  background-color: azure;
+  width: 20%;
+  justify-content: center;
+  padding: 1vw;
+  height: 45vw;
+}
+.flex-container-content {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color: green;
+  width:80%;
+  height: 45vw;
+  overflow: auto;
+}
+.flex-container-menubar {
+  box-sizing: border-box;
+  display: block;
+  background-color: #0062d1;
+  width: 100%;
+  height: 3vw;
+}
+
+.flex-container-footer {
+  box-sizing: border-box;
+  flex-grow: 9;
+  background-color: #0062d1;
+  width: 100%;
+  height: 5vw;
+}
+
+
+
+.responsiveImage{
+width: 100%;
+height:auto;
+position: relative;
+}
+
+.coverFont{
+  position: absolute;
+  color: azure;
+  font-size: 5vw;
+  text-shadow: 2px 2px black;
+}
+#hi{
+  top: 35vw;
+	margin-left: 2.5vw; 
+}
+
+#Aspiring{
+  top: 15vw;
+	right: 0;
+  margin-right: 1vw
+  ;
+}
+
+.coverLabel{
+  position: absolute;
+  background-color: azure;
+  width: fit-content;
+  height: auto;
+  font-size: 5vw;
+  padding: 1vw;
+}
+#topLeftLabel{
+  border-bottom-right-radius: 2.5vw;
+}
+#bottomRightLabel{
+  border-top-left-radius: 2.5vw;
+  right: 0;
+  bottom: 0;
+}
+#pictureContainer{
+  width: 15vw;
+  height: 15vw;
+  position: relative;
+  margin-bottom: 2vw;
+}
+
+#picKo{
+  width: 95%;
+ border-radius: 50%;
+ box-shadow: .1vw .1vw .2vw lightgray;
+}
+#personalINfoContainer{
+  width: 100%;
+  
+  font-size: 1vw;
+  flex-grow: 9;
+
+  margin-bottom: 2vw;
+}
+.mediaLinks{
+font-size: 1vw;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.left {
+  width: 40%;
+
+}
+
+.right {
+  width: 60%;
+
+}
+.center{
+  width: 100%;
+  text-align: center;
+  font-size: 1.2vw;
+}
+.left20 {
+  width: 20%;
+
+  float: left;
+
+}
+
+.right80 {
+  width: 80%;
+ float: left;
+  font-size: 1.1vw;
+  text-align: center;
+  justify-self: center;
+}
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0062d1;
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+  font-size: 1.2vw;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li  {
+  display: flex;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  height: 100%;
+  align-items: center;
+  padding: .5vw;
+}
+
+.active {
+  background-color: #e76800;
+}
+.nonActive {
+  background-color: #0062d1;
+}
+.nonActive:hover {
+  background-color: #401488;
+}
+.navContent{
+  width: 100%;
+  height: 950%;
+  padding: 1vw;
+  background-color: white;
+  display: none;
+}
+#gradPicContainer{
+  width: 30%;
+  height: 100%;
+ float: left;
+}
+#gradPic{
+  border-radius: 5%;
+  box-shadow: .3vw .3vw .5vw  darkgray;
+}
+#educationText{
+  width: 68%;
+  height: 100%;
+  float: left;
+  margin-left: 1vw;
+  padding: 1vw;
+  padding-left: 1vw;
+  background-color: white;
+}
+.textHead{
+  font-size: 1.5vw;
+  padding: .5vw;
+  padding-left: 1.5vw;
+  background-image: linear-gradient(to right, #0062d1 , rgb(255, 255, 255));
+  color: white;
+  border-bottom-left-radius: .7vw;
+  border-top-left-radius: .7vw;
+  animation-name: headAni;
+  animation-duration: 1.5s;
+  width: 80%;
+}
+@keyframes headAni{
+  from {width:40%;}
+  to {width: 80%;}
+}
+@keyframes textAni{
+  from {font-size:1vw;}
+  to {font-size: 1.2vw;}
+}
+
+.text{
+  font-size: 1.2vw;
+  margin-left: 5vw;
+}
+.workContainer{
+  width: 100%;
+  color: red;
+  position: relative;
+  margin-bottom: 5vw;
+
+}
+.workPicContainer{
+  width: 15%;
+  overflow: hidden;
+  border-top-left-radius: 12%;
+ border-bottom-left-radius: 12%;
+ float: left;
+ border-color: #0062d1;
+ border-style: solid;
+ border-width: .2vw;
+ position: relative;
+ height: fit-content;
+}
+.workHead{
+float: left;
+border-radius: 0;
+width: 80%;
+}
+.workText{
+  background-color: white;
+  width: 80%;
+  float: left;
+  padding: 1vw;
+  height: 7.5vw;
+  box-shadow: .2vw .3vw .5vw 0vw   gray;
+margin-bottom: 3vw;
+}
+/*#workSoundTech{
+  background-image: linear-gradient(to right,#003572,white);
+}
+#workPrinting{
+  background-image: linear-gradient(to right,#000b3b,white);
+}*/
+.artPicCon{
+  width: 10vw;
+  height: fit-content;
+  max-height: 14vw;
+  float: left;
+  margin: 1vw;
+  overflow: hidden;
+  object-fit: contain;
+  box-shadow: .2vw .2vw .5vw gray;
+  align-content: center;
+}
+#contentArt{
+  position: relative;}
+#artModal{
+  width: 95%;
+  height: 80%;
+  display: none;
+  position: absolute;
+  background-color: rgba(0,0,0,.5);
+  opacity: 1;
+}
+.artPicCon:hover{
+  cursor: pointer;
+}
+.closeButton{
+ position: absolute;
+  top: 0;
+  left: 98%;
+  padding: .2vw;
+  color: red;
+  font-weight: bolder;
+  font-size: 1vw;
+ 
+}
+.closeButton:hover{
+cursor: pointer;
+}
+#modalImageContainer{
+  margin-top: 1vw;
+  float: left;
+  width: 90%;
+  height: 100%;
+  text-align: center;
+}
+#modalImage{
+  margin-top: 1vw;
+  float: left;
+  width: 100%;
+  height: 90%;
+object-fit: contain;
+}
+
+.navButton{
+  float: left;
+  justify-content: center;
+  align-items: center;
+width: 5%;
+height: 100%;
+display: flex;
+}
+.navButton:hover{
+  background-color: rgba(255,255,255,.1);
+  cursor: pointer;
+}
+
+#backButton{
+
+}
+#forwardButton{
+  
+}
+.bullets{
+  display: inline-block;
+  font-size: 1.5vw;
+  color: black;
+  opacity: .3;
+  margin-top: 2vw;
+}
+.bulletsActive{
+  display: inline-block;
+  font-size: 1.5vw;
+  color: black;
+  opacity: 1;
+  font-size: 2vw;
+}
+
+#contentTrainings{
+  overflow-y: scroll;
+}
+.certContainer{
+  width: 90%;
+  height: 33vw;
+  background-color: rgb(255, 249, 239);
+  float: left;
+  margin: auto;
+  display: block;
+  box-shadow: 0vw 1vw 3vw black;
+  margin-bottom: 1vw;
+  padding: 1vw;
+  animation-name: fadeout;
+  animation-duration: 1s;
+}
+.cert{
+  width: 80%;
+  padding: 1vw;
+  float: left;
+
+
+}
+.competencies{
+ 
+}
+.spacerCert{
+margin-top: 1vw;
+margin-bottom: 1vw;
+}
+.schoolText{
+    text-align: center;
+    font-size: 1.5vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.addressText{
+  text-align: center;
+  font-size: 1vw;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.courseText{
+  text-align: center;
+  font-size: 4vw;
+}
+.nameText{
+  font-family: 'Brush Script MT', cursive;
+  text-align: center;
+  font-size: 5vw;
+}
+.competencies{
+  text-align: center;
+  float: left;
+  width: 20%;
+  padding: 1vw;
+  font-size: 1vw;
+}
+.competenciesText{
+  text-align: left;
+}
+.navButtonCert{
+float: left;
+justify-content: center;
+align-items: center;
+width: 5%;
+height: 33vw;
+display: flex;
+}
+.navButtonCert:hover{
+  background-color: white;
+  opacity: .5;
+  cursor: pointer;
+}
+.bulletCertCon{
+  display: block;
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+.bulletsCert{
+  display: inline-block;
+  font-size: 2vw;
+  color: rgb(90, 90, 90);
+  
+  text-align: center;
+}
+.bulletCertConActive{
+  display: inline-block;
+  text-align: center;
+  font-size: 2.5vw;
+  color: black;
+  text-align: center;
+}
+#webdev{
+  
+}
+
+@keyframes fadeout {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+#contentInterest{
+  padding: 1vw;
+  height: 95%;;
+}
+
+.photoCollageCon{
+  width: 100%;
+  display: block;
+  
+  height: 100%;
+  flex-wrap: wrap;
+  padding: 0;
+}
+.flexRow{
+  width: 100%;
+  height: 34%;
+  display: block;
+  overflow: hidden;
+}
+.imgInterest{
+  vertical-align: top;
+  padding: .1vw;
+  float: left;
+  transition: transform .2s;
+}
+
+#img2{
+  width: 12%;
+ 
+
+}
+.groupCollage{
+  display: block;
+  width: 100%;
+}
+
+#img4{
+width: 53%;
+}
+#img5{
+  width: 10.7%;
+}
+#lebron{
+  width: 9.3%;
+}
+.flexCol{
+  height: 100%;
+  width: 15%;
+
+  float: left;
+  overflow: hidden;
+}
+
+#flexrow2{
+  height: 41%;
+}
+#img6{
+width: 18%;
+}
+#flexCol2{
+  width: 22%;
+}
+#kobe{
+  width: 23%;
+}
+#bron{
+width: 17%;
+}
+#flexCol3{
+  width: 20%;
+}
+#flexrow3{
+height: 25%;
+}
+#basketball{
+  width: 30%;
+}
+#mags{
+  width: 18.6%;
+}
+#ragnar{
+  width: 25%;
+}
+#flexCol4{
+  width: 12%;
+}
+#shoes{
+  width: 14.3%;
+}
+
+.interestAnimation:hover{
+  transform: scale(1.1);
+
+}
+#contentSkills{
+  overflow: scroll;
+  padding: 1vw;
+}
+
+.skillsTable{
+width: 100%;
+display: block;
+height: 100%;
+border-style: solid;
+border-color:#0062d1;
+
+
+}
+.skillsHead{
+  width: 100%;
+  background-color: #0062d1;
+  color: white;
+  text-align: center;
+
+}
+.skillsHeadText{
+  font-size: 2vw;
+}
+.subText{
+  font-size: 1.5vw;
+}
+.subHead{
+  width: 50%;
+  float: left;
+  background-color: #258bff;
+  padding: .1vw;
+}
+.contentSkill{
+width: 50%;
+background-color: white;
+color: black;
+padding: .5vw;
+float: left;
+
+}
+.skillsItemContainer{
+  width: 100%;
+  height: fit-content;
+  box-shadow: 1vw 1vw 2vw black;
+  position: relative;
+}
+.skillsItemCircle{
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50%;
+  display: inline-block;
+  overflow: hidden;
+  position: absolute;
+  border-style: solid;
+  border-width:.2vw;
+  border-color: orangered;
+  animation: grow .5s;
+}
+
+@keyframes grow {
+  from {width: 2vw; height: 2vw;}
+  to {width: 5vw; height: 5vw;}
+}
+.skillItemsTextHead{
+  width: 100%;
+  padding-top: .25vw;
+  padding-left: 3vw;
+  padding-bottom: .25vw;
+  background-color: orangered;
+  border-radius: 1vw;
+  float: right;
+  border-bottom-right-radius: 0;
+  color: white;
+  font-weight: bolder;
+}
+
+.skillItemsText{
+  width: 90%;
+  float: right;
+  background-color: white;
+  margin-top: 1vw;
+  padding-bottom: 3vw;
+  border-radius: 1vw;
+  border-style: solid;
+  border-color: orangered;
+   font-size: .7vw;
+  
+  }
+
+.halfContainer{
+width: 50%;
+float: left;
+}
+
+#contentProjects{
+ /* overflow: scroll; */
+}
+.projectsCon{
+width: 50%;
+background-color: white;
+float: left;
+height: 19vw;
+}
+.projectsImgCon{
+  width: 17vw;
+  height: 17vw;
+  background-color: #258bff;
+  float: left;
+  margin-bottom: 2vw;
+  position: relative;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #258bff;
+}
+.buttonCon{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: .1vw;
+  color: red;
+}
+.buttonProjects{
+  font-size: .7vw;
+  cursor: pointer;
+  color: red;
+  font-weight: bolder;
+
+}
+
+.projectsDetails{
+
+}
+.projectsLines{
+  font-size: 1vw;
+  float: left;
+  border-bottom: solid;
+  border-width: 1px;
+margin-left: .3vw;
+  width: 48%;
+  padding-bottom: 0;
+  margin-bottom: .3vw;
+}
+.titleProject{
+font-weight: bolder;
+}
+.projectHead{
+color: red;
+}
+.emptylines{
+  padding-bottom: 1vw;
+}
+.footerContent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: white;
+  font-size: .8vw;
+
+}
+#contentArea_4_tablet_mobile{
+  display: none;
+}
+
+/* tablet bellow */
+@media only screen and (max-width: 768px) {
+
+  #contentArea_4_PC{
+    display: none;
+  }
+
+  #contentArea_4_tablet_mobile{
+    display: block;
+  }
+  
+*{
+  box-sizing: border-box;
+
+}
+
+.flex-container-sidebar {
+  width: 100%;
+  background-color: white;
+  height: 31vw;
+
+}
+#picKo{
+  width: 30vw;
+  height: 28vw;
+}
+#pictureContainer{
+width: 30%;
+/* background-color: violet; */
+float: left;
+}
+#personalINfoContainerMObile{
+width: 70%;
+/* background-color: yellow; */
+float: left;
+}
+.center{
+  font-size: 3vw;
+  text-align: left;
+}
+.column, .mediaLinks{
+font-size: 2.2vw;
+}
+.flex-container-content{
+  width: 100%;
+}
+.headBar{
+  width: 100%;
+  height: 6vw;
+  background-color: #0062d1;
+  padding: 1vw;
+  text-align: center;
+  font-size: 4vw;
+}
+#iconMenu{
+  width: 3vw;
+  float: left;
+  margin-right: 1vw;
+}
+#iconMenu:hover {
+cursor: pointer;
+}
+#navHead4Mobile{
+  color: white;
+}
+#dropDown4Mobile{
+  position: absolute;
+  margin-top: 5vw;
+  margin-left: 1vw;
+  display: none;
+}
+ul{
+  display: block;
+  width: 30%;
+}
+li{
+  width: 100%;
+  display: block;
+  font-size: 2vw;
+  margin: auto;
+  text-align: left;
+  cursor: pointer;
+}
+li:hover{
+  background-color: #401488;
+  
+}
+.flex-container-content{
+  overflow: unset;
+
+  height: auto;
+}
+#interestContainer{
+  height: 45vw;
+  margin-bottom: 3vw;
+  padding-bottom: 3vw;
+}
+#contentTrainings{
+overflow: unset;
+}
+#contentSkills{
+  overflow: unset;
+  height: fit-content;
+}
+
+.subHead{
+  width: 100%;
+}
+.halfContainer{
+  width: 100%;
+}
+.skillItemsText{
+  padding-bottom: 10vw;
+}
+.skillsItemCircle{
+  width: 10vw;
+  height: 10vw;
+  animation: grow2 .3s;
+}
+@keyframes grow2 {
+  from {width: 0vw; height: 0vw;}
+  to {width: 10vw; height: 10vw;}
+}
+.skillItemsTextHead{
+padding-left: 6vw; 
+font-size: 3vw; 
+}
+.skillItemsText{
+  font-size: 2.5vw;
+}
+.skillstextCon{
+margin-left: 5.5vw;
+}
+.skillsHeadText{
+  font-size: 3vw;
+}
+.skillsTable{
+height: 152vw;
+}
+.projectsCon{
+  width: 100%;
+  display: block;
+  height: fit-content;
+  margin-top: 3vw;
+}
+.projectsImgCon{
+width: 40vw;
+height: 40vw;
+}
+.projectsLines{
+  width: 55%;
+  font-size: 2.7vw;
+}
+.emptylines{
+  padding-bottom: 2.7vw;
+}
+
+
+.buttonProjects{
+  font-size: 2.5vw;
+}
+.footerContent{
+  font-size: 3vw;
+}  
+
+.workContainer{
+  height: 18vw;
+  display: block;
+}
+.workText{
+  padding: 0;
+  margin-bottom: 0;
+  display: block;
+  width: 75%;
+  height: 80%;
+  font-size: 2.5vw;
+  padding: 1vw;
+
+}
+.workHead{
+  display: block;
+  width: 75%;
+  height: 20%;
+  font-size: 3vw;
+ 
+
+}
+.workPicContainer{
+  width: 20vw;
+  height: 18vw;
+  display: block;
+  fill: crimson;
+}
+@keyframes headAni{
+  from {width:40%;}
+  to {width: 75%;}
+}
+
+.textHead{
+width: 75%;
+font-size: 2.5vw;
+}
+.text{
+  font-size: 2vw;
+}
+.artPicCon{
+  width: 70%;
+  max-height: 110vw;
+  display: block;
+ clear: both;
+ box-shadow: 1vw 1vw 3vw darkgray;
+ margin: 2vw;
+}
+#contentArtMobile{
+padding-left: 20vw;
+}
+.flexRow{
+
+}
+#contentInterest{
+height: 100%;
+}
+#interestContainer{
+  height: 55vw;
+}
+}
+
