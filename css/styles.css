@@ -193,9 +193,11 @@ li  {
 
 .active {
   background-color: #e76800;
+  cursor: pointer;
 }
 .nonActive {
   background-color: #0062d1;
+  cursor: pointer;
 }
 .nonActive:hover {
   background-color: #401488;
